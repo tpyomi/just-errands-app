@@ -5,6 +5,8 @@ import HomeScreen from "../screens/HomeScreen";
 import OnboardingScreen from "../screens/OnboardingScreen";
 import { getItem } from "../utils/asyncStorage";
 import WelcomeScreen from "../screens/WelcomeScreen";
+import LoginScreen from "../screens/LoginScreen";
+import SignupScreen from "../screens/SignupScreen";
 
 const Stack = createStackNavigator();
 
@@ -68,6 +70,16 @@ export default function AppNavigation() {
           <Stack.Screen
             name="Welcome"
             component={WelcomeScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Login"
+            component={LoginScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Signup"
+            component={SignupScreen}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>

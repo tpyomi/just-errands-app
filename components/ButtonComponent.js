@@ -43,8 +43,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
   }),
   btnStyle: (backgroundColor, width, height) => ({
-    height: width,
-    width: height,
+    height: height,
+    width: width,
     marginVertical: 5,
     backgroundColor: backgroundColor,
     justifyContent: "center",
